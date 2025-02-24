@@ -2,12 +2,13 @@ import type React from "react"
 import "@/styles/globals.css"
 import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
+import { siteConfig } from "@/content/config"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "John Doe - Software Engineer",
-  description: "Personal portfolio website of John Doe, a software engineer.",
+  title: siteConfig.title,
+  description: siteConfig.description,
     generator: 'v0.dev'
 }
 
