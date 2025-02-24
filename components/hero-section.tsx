@@ -1,15 +1,19 @@
-import { Button } from "@/components/ui/button"
-import { Github, Linkedin, Mail } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export function HeroSection() {
   return (
-    <section id="home" className="flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] text-center">
+    <section
+      id="home"
+      className="flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] text-center p-10"
+    >
       <div className="space-y-6">
         <h1 className="text-4xl font-bold sm:text-6xl">
           Hi, I'm <span className="text-primary">John Doe</span>
         </h1>
         <p className="text-xl text-muted-foreground max-w-[42rem] leading-normal sm:text-2xl sm:leading-normal">
-          A passionate software engineer specializing in building exceptional digital experiences.
+          A passionate software engineer specializing in building exceptional
+          digital experiences.
         </p>
         <div className="flex flex-wrap items-center justify-center gap-4">
           <Button>
@@ -27,6 +31,5 @@ export function HeroSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-
